@@ -1,0 +1,653 @@
+@import "tailwindcss";
+
+/* ===================================================
+   ELITE DIESEL SERVICE — brand system
+   Palette: primary red #c8102e / deep #8b0f1c
+   Matte black #0a0a0a / steel #1c2434 / off-white #f9f7f4
+   =================================================== */
+
+:root {
+  --ed-red: #c8102e;
+  --ed-red-deep: #8b0f1c;
+  --ed-black: #0a0a0a;
+  --ed-steel: #1c2434;
+  --ed-steel-2: #0f1623;
+  --ed-offwhite: #f9f7f4;
+  --ed-bone: #f1ece4;
+  --ed-border: #e8e2da;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ed-offwhite);
+  color: #1a1a1a;
+  font-family: var(--font-body), "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: var(--font-display), "Oswald", "Arial Narrow", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* ===================================================
+   BUTTONS — red-forward
+   =================================================== */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--ed-red);
+  color: #fff;
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.375rem;
+  transition: background 0.15s, transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 2px 10px rgba(200,16,46,0.35), inset 0 -2px 0 rgba(0,0,0,0.15);
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.btn-primary:hover {
+  background: var(--ed-red-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(200,16,46,0.5), inset 0 -2px 0 rgba(0,0,0,0.2);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #1a1a1a;
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.375rem;
+  border: 2px solid #d1c8bb;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.btn-outline:hover { border-color: var(--ed-red); color: var(--ed-red); background: rgba(200,16,46,0.04); }
+
+.btn-outline-white {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.85rem 1.75rem;
+  border-radius: 0.375rem;
+  border: 2px solid rgba(255,255,255,0.4);
+  transition: border-color 0.15s, background 0.15s;
+}
+.btn-outline-white:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+
+.section { padding: 9rem 0; }
+.section-sm { padding: 6rem 0; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+
+/* ===================================================
+   CARDS
+   =================================================== */
+
+.card-service {
+  background: #fff;
+  border: 1px solid var(--ed-border);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  position: relative;
+}
+.card-service::after {
+  content: "";
+  position: absolute;
+  left: 1.75rem;
+  right: 1.75rem;
+  bottom: 0;
+  height: 2px;
+  background: var(--ed-red);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.3s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.card-service:hover {
+  border-color: var(--ed-red);
+  box-shadow: 0 8px 28px rgba(200,16,46,0.12);
+  transform: translateY(-3px);
+}
+.card-service:hover::after { transform: scaleX(1); }
+
+.section-dark {
+  background: var(--ed-steel);
+  color: #fff;
+}
+
+.section-warm {
+  background: #fdf6ed;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(200,16,46,0.08);
+  color: var(--ed-red-deep);
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(200,16,46,0.25);
+}
+
+/* ===================================================
+   CINEMATIC / CHROME ELEVATION
+   =================================================== */
+
+.text-chrome {
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 35%, #94a3b8 55%, #cbd5e1 80%, #f1f5f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-ember {
+  background: linear-gradient(180deg, #ff4a63 0%, #c8102e 45%, #8b0f1c 85%, #5a0a13 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Monumental display for the pardon dates */
+.mono-display {
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  font-stretch: condensed;
+  letter-spacing: -0.03em;
+  line-height: 0.85;
+}
+
+/* ===================================================
+   HERO
+   =================================================== */
+
+.hero-cinematic {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 90% 60% at 78% 45%, rgba(200,16,46,0.4) 0%, rgba(200,16,46,0.08) 35%, transparent 65%),
+    radial-gradient(ellipse 60% 80% at 15% 85%, rgba(30,41,59,0.7) 0%, transparent 60%),
+    linear-gradient(180deg, #0a0f1a 0%, #14192a 50%, #0a0a0a 100%);
+}
+
+.hero-grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(148,163,184,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148,163,184,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, #000 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 50%, #000 30%, transparent 75%);
+  pointer-events: none;
+}
+
+.hero-noise {
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.95' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.85'/></svg>");
+  pointer-events: none;
+}
+
+/* Heat shimmer: subtle hue warp on the backdrop layer */
+.hero-logo-backdrop {
+  position: absolute;
+  top: 50%;
+  right: -8%;
+  transform: translateY(-50%);
+  width: 900px;
+  height: 900px;
+  max-width: 95vw;
+  max-height: 95vw;
+  opacity: 0.09;
+  filter: blur(3px) grayscale(100%) contrast(1.3) brightness(1.1);
+  pointer-events: none;
+  animation: slowZoom 22s ease-in-out infinite alternate, heatShimmer 6s ease-in-out infinite alternate;
+  will-change: transform, filter;
+}
+
+@keyframes slowZoom {
+  0% { transform: translateY(-50%) scale(1); }
+  100% { transform: translateY(-50%) scale(1.1); }
+}
+
+@keyframes heatShimmer {
+  0%   { filter: blur(3px) grayscale(100%) contrast(1.3) brightness(1.08) hue-rotate(-2deg); }
+  50%  { filter: blur(3.5px) grayscale(100%) contrast(1.35) brightness(1.12) hue-rotate(4deg); }
+  100% { filter: blur(3px) grayscale(100%) contrast(1.3) brightness(1.08) hue-rotate(-1deg); }
+}
+
+.hero-logo-main {
+  filter: drop-shadow(0 0 60px rgba(200,16,46,0.4)) drop-shadow(0 12px 40px rgba(0,0,0,0.6));
+  animation: emberPulse 4.5s ease-in-out infinite alternate;
+}
+@keyframes emberPulse {
+  0% { filter: drop-shadow(0 0 50px rgba(200,16,46,0.3)) drop-shadow(0 12px 40px rgba(0,0,0,0.6)); }
+  100% { filter: drop-shadow(0 0 90px rgba(200,16,46,0.55)) drop-shadow(0 12px 40px rgba(0,0,0,0.6)); }
+}
+
+.hero-headline {
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 0.88;
+  text-transform: uppercase;
+}
+
+/* Pulsing phone button in hero */
+.btn-phone-pulse {
+  position: relative;
+}
+.btn-phone-pulse::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 0.5rem;
+  border: 2px solid rgba(200,16,46,0.55);
+  opacity: 0;
+  animation: ringPulse 2.2s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes ringPulse {
+  0%   { transform: scale(1);   opacity: 0.8; }
+  100% { transform: scale(1.25); opacity: 0; }
+}
+
+/* RPM sound-wave line along the bottom of hero */
+.rpm-wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0.55;
+  mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
+}
+
+/* ===================================================
+   CHROME BAND
+   =================================================== */
+
+.chrome-band {
+  background:
+    linear-gradient(180deg, #1a1f2e 0%, #0f1623 100%);
+  border-top: 1px solid rgba(201,206,214,0.15);
+  border-bottom: 1px solid rgba(201,206,214,0.15);
+  position: relative;
+  overflow: hidden;
+}
+.chrome-band::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(201,206,214,0.06) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.stat-chrome {
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 55%, #64748b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.01em;
+}
+
+/* ===================================================
+   STORY SECTION
+   =================================================== */
+
+.story-section {
+  background:
+    radial-gradient(ellipse 60% 40% at 50% 0%, rgba(200,16,46,0.06) 0%, transparent 60%),
+    linear-gradient(180deg, #faf7f2 0%, #f1ece4 100%);
+  position: relative;
+}
+
+.story-headline {
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  text-transform: uppercase;
+}
+
+.pull-quote {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: var(--ed-steel);
+  border-left: 3px solid var(--ed-red);
+  padding: 0.25rem 0 0.25rem 1.5rem;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #475569, #1e293b);
+  box-shadow: 0 0 0 4px rgba(30,41,59,0.12), 0 2px 6px rgba(0,0,0,0.2);
+}
+.timeline-dot-accent {
+  background: linear-gradient(180deg, #ff4a63, #8b0f1c);
+  box-shadow: 0 0 0 4px rgba(200,16,46,0.18), 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.pardon-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  background: rgba(200,16,46,0.08);
+  color: var(--ed-red-deep);
+  border: 1px solid rgba(200,16,46,0.3);
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ===================================================
+   PARDON SECTION — dedicated, full-bleed, dramatic
+   =================================================== */
+
+.pardon-section {
+  background: var(--ed-black);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding: 9rem 0;
+  border-top: 2px solid var(--ed-red);
+  border-bottom: 2px solid var(--ed-red);
+}
+
+.pardon-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 20%, rgba(200,16,46,0.18) 0%, transparent 60%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 3px);
+  pointer-events: none;
+}
+
+.pardon-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)' opacity='0.9'/></svg>");
+  pointer-events: none;
+}
+
+.pardon-accent-bar {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--ed-red) 20%, var(--ed-red) 80%, transparent);
+  width: 100%;
+}
+
+.pardon-date {
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: clamp(4rem, 12vw, 11rem);
+  line-height: 0.82;
+  letter-spacing: -0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgba(255,255,255,0.22);
+  text-stroke: 1.5px rgba(255,255,255,0.22);
+  transition: color 0.4s, -webkit-text-stroke 0.4s;
+}
+.pardon-date-filled {
+  color: #fff;
+  -webkit-text-stroke: 0;
+  text-shadow: 0 0 40px rgba(200,16,46,0.6);
+}
+
+.pardon-pullquote {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-style: italic;
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
+  line-height: 1.55;
+  color: #f1f5f9;
+  border-left: 4px solid var(--ed-red);
+  padding: 0.5rem 0 0.5rem 1.75rem;
+}
+
+/* ===================================================
+   SERVICE PRO CARD
+   =================================================== */
+
+.card-service-pro {
+  position: relative;
+  background: #fff;
+  border: 1px solid var(--ed-border);
+  border-radius: 0.75rem;
+  padding: 1.85rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+.card-service-pro::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0.75rem;
+  padding: 1px;
+  background: linear-gradient(135deg, transparent 30%, rgba(200,16,46,0.55) 55%, transparent 80%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.card-service-pro::after {
+  content: "";
+  position: absolute;
+  left: 1.85rem;
+  right: 1.85rem;
+  bottom: 0;
+  height: 2px;
+  background: var(--ed-red);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.card-service-pro:hover::before { opacity: 1; }
+.card-service-pro:hover::after { transform: scaleX(1); }
+.card-service-pro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(28,36,52,0.12), 0 2px 8px rgba(200,16,46,0.14);
+  border-color: transparent;
+}
+.card-service-pro .card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #fde8eb 0%, #f5b0b8 100%);
+  font-size: 1.4rem;
+  margin-bottom: 1.1rem;
+  box-shadow: inset 0 -2px 4px rgba(139,15,28,0.12), 0 2px 6px rgba(200,16,46,0.15);
+}
+
+/* ===================================================
+   DIAGONAL DIVIDER
+   =================================================== */
+
+.diag-divider {
+  position: relative;
+  height: 80px;
+  background: transparent;
+  overflow: hidden;
+}
+.diag-divider svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ===================================================
+   STICKY MOBILE CTA
+   =================================================== */
+
+.sticky-mobile-cta {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 60;
+  background: rgba(10,10,10,0.96);
+  backdrop-filter: blur(8px);
+  border-top: 2px solid var(--ed-red);
+  padding: 0.75rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+  transform: translateY(110%);
+  transition: transform 0.3s ease;
+}
+.sticky-mobile-cta.is-visible {
+  transform: translateY(0);
+}
+.sticky-mobile-cta a {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.8rem 0.5rem;
+  border-radius: 0.4rem;
+  font-family: var(--font-display), "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.sticky-mobile-cta .cta-call {
+  background: var(--ed-red);
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(200,16,46,0.4);
+}
+.sticky-mobile-cta .cta-dir {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+@media (min-width: 768px) {
+  .sticky-mobile-cta { display: none; }
+}
+
+/* ===================================================
+   SCROLL REVEAL + INTERSECTION FADE-INS
+   =================================================== */
+
+@media (prefers-reduced-motion: no-preference) {
+  .fade-up {
+    animation: fadeUp 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .fade-up-delay-1 { animation-delay: 0.12s; }
+  .fade-up-delay-2 { animation-delay: 0.24s; }
+  .fade-up-delay-3 { animation-delay: 0.36s; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .reveal {
+    transition: opacity 0.8s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+    will-change: opacity, transform;
+  }
+  /* Only hide reveals if JS has flagged them as pending — guarantees
+     content stays visible if JS fails or route-change misses observer. */
+  .reveal.is-pending {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; }
+  .hero-logo-backdrop, .hero-logo-main { animation: none; }
+}
+
+/* RPM wave drift animation */
+@media (prefers-reduced-motion: no-preference) {
+  .rpm-wave-path {
+    animation: rpmDrift 8s linear infinite;
+  }
+  @keyframes rpmDrift {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-120px); }
+  }
+}
+
+/* Parallax is handled by a tiny JS component (data attr) —
+   fallback: no JS means no drift, which is fine. */
+[data-parallax] {
+  will-change: transform;
+  transform: translate3d(0, var(--parallax-y, 0), 0);
+}
+
+/* Footer accent bar */
+.footer-red-bar {
+  height: 4px;
+  background: linear-gradient(90deg, var(--ed-red) 0%, var(--ed-red-deep) 100%);
+}
+
+/* Expand/collapse for service "learn more" */
+.service-expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.service-expand.is-open {
+  grid-template-rows: 1fr;
+}
+.service-expand > div {
+  overflow: hidden;
+}
