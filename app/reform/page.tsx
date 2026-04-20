@@ -18,7 +18,7 @@ const CHAPTERS = [
     num: "II",
     date: "2024",
     heading: "The Prosecution",
-    body: "Troy and Elite Diesel Service were convicted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks. The work was done for customers who asked for it, in an industry where after-treatment failures regularly take rigs out of service at the worst possible times. A federal case followed. Troy served seven months.",
+    body: "Troy and Elite Diesel Service were convicted under the Clean Air Act for conspiracy to disable emissions controls on hundreds of commercial trucks. The work was done for customers who asked for it, in an industry where after-treatment failures regularly take rigs out of service at the worst possible times. A federal case followed. Troy served seven months.",
   },
   {
     num: "III",

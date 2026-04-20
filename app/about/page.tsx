@@ -166,7 +166,7 @@ export default function AboutPage() {
 
           <div className="max-w-3xl text-[#cbd5e1] space-y-5 leading-relaxed text-base md:text-lg">
             <p>
-              Troy was prosecuted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks. The work was done for customers who asked for it, in an industry caught between regulators and the reality of keeping a truck on the road. He served seven months.
+              Troy was prosecuted under the Clean Air Act for conspiracy to disable emissions controls on hundreds of commercial trucks. The work was done for customers who asked for it, in an industry caught between regulators and the reality of keeping a truck on the road. He served seven months.
             </p>
             <p>
               On <strong className="text-white">November 7, 2025</strong>, President Trump granted Troy a full and unconditional pardon. On <strong className="text-white">February 12, 2026</strong>, the president pardoned Elite Diesel Service itself. A rare second pardon for the company. Civil rights fully restored.
