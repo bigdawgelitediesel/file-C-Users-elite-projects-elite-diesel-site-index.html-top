@@ -8,10 +8,10 @@ export const metadata: Metadata = {
 };
 
 const KIT_ASSETS = [
-  "Elite Diesel Service logo — PNG & SVG",
-  "Troy Lake headshot (placeholder — coming soon)",
-  "Shop exteriors · Cheyenne, WY (placeholder — coming soon)",
-  "H.R. 8079 one-pager — Diesel Truck Liberation Act",
+  "Elite Diesel Service logo (PNG & SVG)",
+  "Troy Lake headshot (placeholder, coming soon)",
+  "Shop exteriors · Cheyenne, WY (placeholder, coming soon)",
+  "H.R. 8079 one-pager: Diesel Truck Liberation Act",
 ];
 
 const COVERAGE_STUBS = [
@@ -49,7 +49,7 @@ export default function PressPage() {
           </h1>
           <p className="mt-10 text-lg md:text-xl text-[#cbd5e1] leading-relaxed max-w-2xl">
             For interviews, comment requests, and press inquiries on Elite Diesel Service,
-            Troy Lake, or the H.R. 8079 pardon arc — Jake Dalton is the point of contact.
+            Troy Lake, or the H.R. 8079 pardon arc, Jake Dalton is the point of contact.
           </p>
         </div>
       </section>
@@ -82,7 +82,7 @@ export default function PressPage() {
                 disabled
                 className="btn-outline opacity-60 cursor-not-allowed shrink-0"
               >
-                Download Press Kit (PDF) — coming soon
+                Download Press Kit (PDF), coming soon
               </button>
             </div>
 
@@ -189,7 +189,7 @@ export default function PressPage() {
               On deadline?
             </div>
             <div className="text-[#94a3b8] text-sm">
-              Call Jake direct — fastest way to a quote or interview.
+              Call Jake direct. Fastest way to a quote or interview.
             </div>
           </div>
           <a href="tel:3074005090" className="btn-primary text-base py-3.5 px-8 shrink-0">

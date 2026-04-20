@@ -21,7 +21,7 @@ const inter = Inter({
 });
 
 const DESCRIPTION =
-  "Elite Diesel Service — Cheyenne, Wyoming. We keep the rigs that keep America moving. Master-certified heavy diesel repair for CAT, Cummins, Detroit, PACCAR, Volvo. Women-owned. Veteran-owned. Est. 1995. Call (307) 400-5090.";
+  "Elite Diesel Service in Cheyenne, Wyoming. We keep the rigs that keep America moving. Master-certified heavy diesel repair for CAT, Cummins, Detroit, PACCAR, and Volvo. Women-owned. Veteran-owned. Est. 1995. Call (307) 400-5090.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://elitediesel.com"),
@@ -36,6 +36,8 @@ export const metadata: Metadata = {
     "diesel engine rebuild",
     "CAT Cummins Detroit repair Wyoming",
     "chassis dyno",
+    "engine dyno",
+    "chassis/engine dyno",
     "ECM diagnostics",
     "Troy Lake",
     "Elite Diesel Service",
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
         url: "/logo.jpg",
         width: 1200,
         height: 630,
-        alt: "Elite Diesel Service — Cheyenne, Wyoming",
+        alt: "Elite Diesel Service, Cheyenne, Wyoming",
       },
     ],
   },

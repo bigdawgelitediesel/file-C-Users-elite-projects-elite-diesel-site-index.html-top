@@ -18,7 +18,7 @@ export function ContactForm() {
           Message queued.
         </div>
         <p className="text-[#555] leading-relaxed mb-6 max-w-md mx-auto">
-          Thanks — we&apos;ll get back to you within a business day. If it&apos;s urgent or your truck is down,
+          Thanks. We&apos;ll get back to you within a business day. If it&apos;s urgent or your truck is down,
           please call the shop directly.
         </p>
         <a href="tel:3074005090" className="btn-primary">

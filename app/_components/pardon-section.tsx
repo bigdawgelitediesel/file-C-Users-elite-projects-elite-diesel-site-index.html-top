@@ -60,7 +60,7 @@ export function PardonSection() {
             on a diesel truck. You break the trucks, you break the country.&rdquo;
           </p>
           <div className="mt-5 pl-8 font-display uppercase text-sm tracking-[0.2em] text-[#94a3b8]">
-            — Troy Lake, Owner
+            Troy Lake, Owner
           </div>
         </div>
 
@@ -73,7 +73,7 @@ export function PardonSection() {
               Now in Congress
             </div>
             <h3 className="font-display uppercase text-white font-bold leading-[0.95] text-[clamp(1.75rem,4vw,3rem)] mb-5 tracking-tight">
-              H.R. 8079 — The Diesel Truck Liberation Act
+              H.R. 8079: The Diesel Truck Liberation Act
             </h3>
             <p className="text-[#cbd5e1] leading-relaxed text-base md:text-lg max-w-2xl">
               Introduced March 25, 2026 by Representative{" "}

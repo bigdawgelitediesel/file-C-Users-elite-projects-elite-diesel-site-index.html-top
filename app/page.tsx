@@ -11,8 +11,8 @@ const SERVICES = [
   },
   {
     icon: "◆",
-    title: "Chassis Dynamometer",
-    desc: "On-site chassis dyno for real-world power measurement and performance tuning. Know your numbers before you hit the road.",
+    title: "Chassis/Engine Dynamometer",
+    desc: "On-site chassis and engine dyno for real-world power measurement, verified break-in, and tune validation at the wheels or at the flywheel.",
   },
   {
     icon: "▲",
@@ -45,8 +45,8 @@ const MILESTONES = [
 ];
 
 const STATS = [
-  { value: "22", unit: "YRS", label: "Master-certified at Caterpillar" },
-  { value: "30+", unit: "YRS", label: "In the heavy diesel trade" },
+  { value: "CAT", unit: "HISTORY", label: "Factory & engineering-team background" },
+  { value: "40+", unit: "YRS", label: "In the heavy diesel trade since 1983" },
   { value: "W&V", unit: "OWNED", label: "Women & veteran owned" },
   { value: "2×", unit: "PARDONED", label: "Full presidential pardons", accent: true },
 ];
@@ -91,7 +91,7 @@ export default function HomePage() {
               </h1>
 
               <p className="text-lg md:text-xl text-[#cbd5e1] leading-relaxed max-w-xl mb-4">
-                We keep the rigs that keep America moving. Master-certified heavy diesel repair — CAT, Cummins, Detroit, PACCAR, Volvo. Women-owned. Veteran-owned.
+                We keep the rigs that keep America moving. Master-certified heavy diesel repair for CAT, Cummins, Detroit, PACCAR, and Volvo. Women-owned. Veteran-owned.
               </p>
 
               <p className="text-sm uppercase tracking-[0.18em] font-display text-[#ff6b7e] mb-10">
@@ -188,7 +188,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-14 items-start mt-16 reveal">
             <div className="space-y-5 text-[#333] leading-relaxed">
               <p>
-                Troy Lake started in the trade in <strong>1983</strong>. Twenty-two years at Caterpillar as a certified Master Mechanic taught him every heavy diesel platform from the ground up — the kind of expertise that can&apos;t be faked or fast-tracked.
+                Troy Lake started in the trade in <strong>1983</strong>. A long history with Caterpillar, time inside the company and years working alongside their engineering teams, taught him every heavy diesel platform from the ground up. The kind of expertise that can&apos;t be faked or fast-tracked.
               </p>
               <p>
                 In <strong>1995</strong> he opened Elite Diesel Service out of a pickup truck in Dubois, Wyoming, running mobile repair for ranchers, loggers, and owner-operators who needed the work done right. The shop grew through Elko, Nevada and Windsor, Colorado before planting its flag in Cheyenne in March <strong>2022</strong>.
@@ -200,13 +200,13 @@ export default function HomePage() {
 
             <div className="space-y-5 text-[#333] leading-relaxed">
               <p>
-                Troy was later prosecuted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks — work done for customers who asked for it, in an industry caught between regulators and the realities of keeping a truck on the road. He served seven months.
+                Troy was later prosecuted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks. The work was done for customers who asked for it, in an industry caught between regulators and the reality of keeping a truck on the road. He served seven months.
               </p>
               <p>
-                On <strong>November 7, 2025</strong>, President Trump granted Troy a <strong>full and unconditional pardon</strong>. On <strong>February 12, 2026</strong>, the president pardoned <strong>Elite Diesel Service</strong> as well — a rare second pardon for the company itself. Civil rights fully restored.
+                On <strong>November 7, 2025</strong>, President Trump granted Troy a <strong>full and unconditional pardon</strong>. On <strong>February 12, 2026</strong>, the president pardoned <strong>Elite Diesel Service</strong> as well. A rare second pardon for the company itself. Civil rights fully restored.
               </p>
               <p>
-                Today Troy is a leading public voice for the <strong>Diesel Truck Liberation Act</strong> — H.R. 8079, introduced March 25, 2026 by Rep. Mike Collins (R-GA-10) with a Senate companion from Sen. Cynthia Lummis (R-WY).
+                Today Troy is a leading public voice for the <strong>Diesel Truck Liberation Act</strong>, H.R. 8079, introduced March 25, 2026 by Rep. Mike Collins (R-GA-10) with a Senate companion from Sen. Cynthia Lummis (R-WY).
               </p>
             </div>
           </div>
@@ -290,9 +290,9 @@ export default function HomePage() {
                 body: "Turning wrenches since 1983. Same family, same standards, same phone number. We’ve seen every failure mode at least twice.",
               },
               {
-                num: "22",
-                title: "Years At Caterpillar",
-                body: "Troy’s a factory-trained CAT tech at heart. You can’t fake that kind of pattern recognition.",
+                num: "CAT",
+                title: "Factory & Engineering-Team Background",
+                body: "Troy has a deep history with Caterpillar: time inside the company and years working alongside their engineering teams. You can’t fake that kind of pattern recognition.",
               },
               {
                 num: "Millions",
@@ -326,11 +326,11 @@ export default function HomePage() {
                 Built Different
               </div>
               <h2 className="font-display uppercase text-3xl md:text-4xl font-bold mt-3 mb-5 tracking-tight leading-[1.05]">
-                Chassis Dyno. Custom Injectors.<br />
+                Chassis &amp; Engine Dyno. Custom Injectors.<br />
                 <span className="text-ember">This Isn&apos;t a Quick-Lube Shop.</span>
               </h2>
               <p className="text-[#94a3b8] leading-relaxed mb-8">
-                We have tools most Wyoming diesel shops don&apos;t carry. Our on-site chassis dynamometer means we tune and verify, not guess. Proprietary fuel-economy injectors are built here, tested here, and proven before they ship. We also do glider kit builds, diesel-to-natural gas conversions, and custom race engines.
+                We have tools most Wyoming diesel shops don&apos;t carry. Our on-site chassis dynamometer means we tune and verify, not guess. Proprietary fuel-economy injectors are built here, tested here, and proven before they ship. We also handle glider kit builds, diesel-to-natural gas conversions, and custom race engines.
               </p>
               <a href="tel:3074005090" className="btn-primary">
                 Talk to a Tech: (307) 400-5090
@@ -379,7 +379,7 @@ export default function HomePage() {
               {[
                 { label: "Address", value: "104 Robert Ave, Cheyenne, WY 82007", href: "https://maps.google.com/?q=104+Robert+Ave+Cheyenne+WY+82007" },
                 { label: "Phone", value: "(307) 400-5090", href: "tel:3074005090" },
-                { label: "Hours", value: "Mon–Fri · 8am to 5pm (closed 12–1)", href: null },
+                { label: "Hours", value: "Mon to Fri · 8am to 5pm (closed 12 to 1)", href: null },
                 { label: "Rates", value: "Trucks $175/hr · Motorhomes $250/hr", href: null },
               ].map((item) => (
                 <div key={item.label} className="flex gap-5 py-4 border-b border-[#f0ece5] last:border-0">

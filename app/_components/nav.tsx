@@ -27,7 +27,7 @@ export function Nav() {
           </div>
           <div className="flex items-center gap-2 whitespace-nowrap truncate">
             <span className="font-display font-bold uppercase tracking-[0.18em] text-[#ff9fac]">Hours</span>
-            <span className="truncate">Mon–Fri 8am–5pm · closed 12–1 for lunch · Weekends closed</span>
+            <span className="truncate">Mon to Fri 8am to 5pm · closed daily 12 to 1 · Weekends closed</span>
           </div>
           <div className="flex items-center gap-2 whitespace-nowrap">
             <span className="font-display font-bold uppercase tracking-[0.18em] text-[#ff9fac]">Location</span>

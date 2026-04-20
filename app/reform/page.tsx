@@ -4,15 +4,15 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Reform · The Pardon Arc & H.R. 8079",
   description:
-    "Troy Lake's pardon, Elite Diesel Service's second pardon, and the Diesel Truck Liberation Act — H.R. 8079, Rep. Mike Collins (R-GA) and Sen. Cynthia Lummis (R-WY).",
+    "Troy Lake's pardon, Elite Diesel Service's second pardon, and the Diesel Truck Liberation Act: H.R. 8079, Rep. Mike Collins (R-GA) and Sen. Cynthia Lummis (R-WY).",
 };
 
 const CHAPTERS = [
   {
     num: "I",
-    date: "1983 – 2024",
+    date: "1983 to 2024",
     heading: "The Work",
-    body: "Troy Lake spent 22 years at Caterpillar before going out on his own. He built Elite Diesel Service from a pickup truck in Dubois, Wyoming into a full-service shop in Cheyenne — chassis dyno, proprietary injector development, ASE-certified team. Thousands of trucks. A reputation earned the hard way: diagnose right, fix once, document everything.",
+    body: "Troy Lake built his expertise inside Caterpillar and alongside their engineering teams before going out on his own. He grew Elite Diesel Service from a pickup truck in Dubois, Wyoming into a full-service shop in Cheyenne: chassis/engine dyno, proprietary injector development, ASE-certified team. Thousands of trucks. A reputation earned the hard way: diagnose right, fix once, document everything.",
   },
   {
     num: "II",
@@ -24,7 +24,7 @@ const CHAPTERS = [
     num: "III",
     date: "November 7, 2025",
     heading: "The First Pardon",
-    body: "President Trump granted Troy Lake a full and unconditional pardon. Civil rights restored. Record cleared. Troy was back under a truck the following morning. For the shop's customers — owner-operators who'd followed the case for a year — the news traveled fast.",
+    body: "President Trump granted Troy Lake a full and unconditional pardon. Civil rights restored. Record cleared. Troy was back under a truck the following morning. For the shop's customers, owner-operators who'd followed the case for a year, the news traveled fast.",
   },
   {
     num: "IV",
@@ -36,13 +36,13 @@ const CHAPTERS = [
     num: "V",
     date: "March 25, 2026",
     heading: "The Bill",
-    body: "Representative Mike Collins (R-GA-10) — who built his own trucking company from a single rig before taking his seat in Congress — introduced the Diesel Truck Liberation Act, H.R. 8079, in the House. Senator Cynthia Lummis (R-WY) runs the companion bill in the Senate. The bill bars the EPA from enforcing Clean Air Act emissions-control requirements on commercial motor vehicles.",
+    body: "Representative Mike Collins (R-GA-10), who built his own trucking company from a single rig before taking his seat in Congress, introduced the Diesel Truck Liberation Act, H.R. 8079, in the House. Senator Cynthia Lummis (R-WY) runs the companion bill in the Senate. The bill bars the EPA from enforcing Clean Air Act emissions-control requirements on commercial motor vehicles.",
   },
   {
     num: "VI",
     date: "Today",
     heading: "The Voice",
-    body: "Troy is a leading public voice for the bill. Not a politician. A mechanic who's been on every side of this issue: the shop floor, the courtroom, the cell, and the press conference. Elite Diesel Service supports the Diesel Truck Liberation Act. Loudly.",
+    body: "Troy is a leading public voice for the bill. Not a politician. A mechanic who's been on every side of this issue: the shop floor, the courtroom, the cell, and the press conference. Elite Diesel Service backs the Diesel Truck Liberation Act. Loudly.",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function ReformPage() {
             <span className="text-chrome">One Bill.</span>
           </h1>
           <p className="mt-10 text-lg md:text-xl text-[#cbd5e1] leading-relaxed max-w-2xl">
-            The story of how Troy Lake and Elite Diesel Service got here — and where the fight goes next.
+            The story of how Troy Lake and Elite Diesel Service got here, and where the fight goes next.
           </p>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function ReformPage() {
             the trucks, you break the country.&rdquo;
           </div>
           <div className="mt-6 pl-8 font-display uppercase text-sm tracking-[0.2em] text-[#94a3b8]">
-            — Troy Lake, Owner · Elite Diesel Service
+            Troy Lake, Owner · Elite Diesel Service
           </div>
         </div>
       </section>
@@ -166,7 +166,7 @@ export default function ReformPage() {
           <div className="text-center mb-12">
             <div className="badge mb-3">The Bill</div>
             <h2 className="font-display uppercase text-4xl md:text-5xl font-bold text-[#1a1a1a] mt-3 tracking-tight leading-[1.02]">
-              H.R. 8079 — Diesel Truck Liberation Act
+              H.R. 8079: Diesel Truck Liberation Act
             </h2>
           </div>
 

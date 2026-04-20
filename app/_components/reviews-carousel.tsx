@@ -6,7 +6,7 @@ const REVIEWS: { name: string; truck: string; text: string }[] = [
   {
     name: "Mario T.",
     truck: "Peterbilt 389 · CAT C15",
-    text: "These guys don't need stars, they need diamonds. Everything from the first interaction to the final product was nothing short of amazing. Attention to detail and quality of work is unparalleled. No parts changers here — actual experienced technicians who care. Stop reading this review and call them!",
+    text: "These guys don't need stars, they need diamonds. Everything from the first interaction to the final product was nothing short of amazing. Attention to detail and quality of work is unparalleled. No parts changers here. Actual experienced technicians who care. Stop reading this review and call them!",
   },
   {
     name: "Larisa P.",
@@ -36,7 +36,7 @@ const REVIEWS: { name: string; truck: string; text: string }[] = [
   {
     name: "Lendon L.",
     truck: "Kenworth W900 · Cummins N14",
-    text: "Elite Diesel does a good job and helps me out all the time. They're honest and trustworthy — and in this business, that matters more than anything.",
+    text: "Elite Diesel does a good job and helps me out all the time. They're honest and trustworthy, and in this business, that matters more than anything.",
   },
 ];
 

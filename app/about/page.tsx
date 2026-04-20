@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Troy Lake & Elite Diesel Service",
   description:
-    "Troy Lake founded Elite Diesel Service in 1995 after 22 years as a certified Master Mechanic at Caterpillar. Women-owned. Veteran-owned. Twice pardoned by President Trump.",
+    "Troy Lake founded Elite Diesel Service in 1995 with a deep Caterpillar background: time inside the company and years alongside their engineering teams. Women-owned. Veteran-owned. Twice pardoned by President Trump.",
 };
 
 const TIMELINE = [
@@ -14,9 +14,9 @@ const TIMELINE = [
     detail: "Troy starts turning wrenches on heavy diesel equipment. The beginning of a career built on doing the work himself, not watching someone else do it.",
   },
   {
-    year: "22 yrs",
-    event: "Caterpillar Master Mechanic",
-    detail: "Twenty-two years with CAT honing expertise across every major diesel platform. The kind of experience that can't be faked or fast-tracked — it only comes from time on the tools.",
+    year: "CAT era",
+    event: "Deep history with Caterpillar",
+    detail: "Years inside Caterpillar and alongside their engineering teams. A long CAT history that shaped Troy's approach to every major diesel platform. The kind of expertise earned from time on the tools and time in the room with the people designing the equipment.",
   },
   {
     year: "1995",
@@ -26,12 +26,12 @@ const TIMELINE = [
   {
     year: "2022",
     event: "Cheyenne shop opens",
-    detail: "After stops in Elko, Nevada and Windsor, Colorado, Elite Diesel plants its flag in Cheyenne: bigger shop, chassis dyno, full parts inventory, more trucks to serve.",
+    detail: "After stops in Elko, Nevada and Windsor, Colorado, Elite Diesel plants its flag in Cheyenne: bigger shop, chassis/engine dyno, full parts inventory, more trucks to serve.",
   },
   {
     year: "2024",
     event: "Federal prosecution",
-    detail: "Troy and Elite Diesel Service are convicted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks — work done for customers who asked for it. Troy serves seven months.",
+    detail: "Troy and Elite Diesel Service are convicted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks. The work was done for customers who asked for it. Troy serves seven months.",
     accent: true,
   },
   {
@@ -49,12 +49,12 @@ const TIMELINE = [
   {
     year: "Today",
     event: "Public voice for reform",
-    detail: "Troy is a leading public voice for the Diesel Truck Liberation Act — H.R. 8079. Elite Diesel supports the effort. Loudly.",
+    detail: "Troy is a leading public voice for the Diesel Truck Liberation Act, H.R. 8079. Elite Diesel supports the effort. Loudly.",
   },
 ];
 
 const CREDS = [
-  "22 years at Caterpillar",
+  "Deep Caterpillar background: factory and engineering-team experience",
   "Certified Master Mechanic",
   "ASE-Certified Shop",
   "Proprietary injector and turbo development",
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <span className="text-ember">Experience.</span>
           </h1>
           <p className="text-[#cbd5e1] text-lg max-w-2xl leading-relaxed">
-            Elite Diesel wasn&apos;t built on a business plan. It was built on 22 years at Caterpillar, a pickup truck in Wyoming, and a refusal to do anything halfway. Women-owned. Veteran-owned. Family-run since 1995.
+            Elite Diesel wasn&apos;t built on a business plan. It was built on a deep history with Caterpillar, a pickup truck in Wyoming, and a refusal to do anything halfway. Women-owned. Veteran-owned. Family-run since 1995.
           </p>
         </div>
       </section>
@@ -94,7 +94,7 @@ export default function AboutPage() {
               <div className="badge mb-4">The Owner</div>
               <h2 className="font-display uppercase text-4xl md:text-5xl font-bold text-[#1a1a1a] mt-4 mb-6 tracking-tight leading-[1.05]">Troy Lake</h2>
               <p className="text-[#444] leading-relaxed mb-5">
-                Troy Lake is a certified Master Mechanic who spent 22 years at Caterpillar before going out on his own. He started Elite Diesel in Dubois, Wyoming — mobile service out of a pickup, serving the ranchers, loggers, and truckers of the mountain west who needed the work done right.
+                Troy Lake is a certified Master Mechanic with a long history at Caterpillar: time inside the company and years alongside their engineering teams on real applications. He started Elite Diesel in Dubois, Wyoming, running mobile service out of a pickup for the ranchers, loggers, and truckers of the mountain west who needed the work done right.
               </p>
               <p className="text-[#444] leading-relaxed mb-5">
                 He&apos;s built engines for work trucks and race trucks alike. He&apos;s diagnosed problems that stumped every other shop in a 300-mile radius. He doesn&apos;t guess. He knows.
@@ -115,7 +115,7 @@ export default function AboutPage() {
             <div className="flex flex-col gap-5">
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { value: "22+", label: "Years at CAT" },
+                  { value: "1983", label: "On Diesel Since" },
                   { value: "1995", label: "Founded" },
                   { value: "5", label: "Major Platforms" },
                   { value: "2×", label: "Pardoned", accent: true },
@@ -136,7 +136,7 @@ export default function AboutPage() {
                     { dt: "Headquarters", dd: "Cheyenne, Wyoming" },
                     { dt: "Owner", dd: "Troy Lake" },
                     { dt: "Certification", dd: "Master Mechanic" },
-                    { dt: "Prior Experience", dd: "22 Years at Caterpillar" },
+                    { dt: "Prior Experience", dd: "Deep CAT background: factory & engineering teams" },
                     { dt: "Ownership", dd: "Women-Owned · Veteran-Owned" },
                     { dt: "Platforms Serviced", dd: "CAT · Cummins · Detroit · PACCAR · Volvo" },
                   ].map((f) => (
@@ -166,13 +166,13 @@ export default function AboutPage() {
 
           <div className="max-w-3xl text-[#cbd5e1] space-y-5 leading-relaxed text-base md:text-lg">
             <p>
-              Troy was prosecuted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks — work done for customers who asked for it, in an industry caught between regulators and the realities of keeping a truck on the road. He served seven months.
+              Troy was prosecuted under the Clean Air Act for disabling emissions controls on hundreds of commercial trucks. The work was done for customers who asked for it, in an industry caught between regulators and the reality of keeping a truck on the road. He served seven months.
             </p>
             <p>
-              On <strong className="text-white">November 7, 2025</strong>, President Trump granted Troy a full and unconditional pardon. On <strong className="text-white">February 12, 2026</strong>, the president pardoned Elite Diesel Service itself — a rare second pardon for the company. Civil rights fully restored.
+              On <strong className="text-white">November 7, 2025</strong>, President Trump granted Troy a full and unconditional pardon. On <strong className="text-white">February 12, 2026</strong>, the president pardoned Elite Diesel Service itself. A rare second pardon for the company. Civil rights fully restored.
             </p>
             <p>
-              Today Troy is a leading public voice for the <strong className="text-white">Diesel Truck Liberation Act</strong> — H.R. 8079, introduced March 25, 2026 by Rep. Mike Collins (R-GA-10) with a Senate companion from Sen. Cynthia Lummis (R-WY). The bill would bar the EPA from enforcing Clean Air Act emissions-control requirements on motor vehicles.
+              Today Troy is a leading public voice for the <strong className="text-white">Diesel Truck Liberation Act</strong>, H.R. 8079, introduced March 25, 2026 by Rep. Mike Collins (R-GA-10) with a Senate companion from Sen. Cynthia Lummis (R-WY). The bill would bar the EPA from enforcing Clean Air Act emissions-control requirements on motor vehicles.
             </p>
           </div>
 
@@ -180,7 +180,7 @@ export default function AboutPage() {
             &ldquo;Diesel isn&apos;t a culture war. It&apos;s the supply chain. Every loaf of bread, every gallon of milk, every panel on every wind turbine in this state got here on a diesel truck. You break the trucks, you break the country.&rdquo;
           </div>
           <div className="mt-5 pl-8 font-display uppercase text-sm tracking-[0.2em] text-[#94a3b8]">
-            — Troy Lake, Owner
+            Troy Lake, Owner
           </div>
 
           <div className="mt-12">
@@ -227,10 +227,10 @@ export default function AboutPage() {
             Knowledge. Quality. Innovation.
           </h2>
           <p className="text-lg text-[#444] leading-relaxed mb-5">
-            These aren&apos;t words on a sign. They&apos;re how the shop runs. We don&apos;t guess at diagnoses. We don&apos;t cut corners on rebuilds. And we never stop looking for a better way to do things.
+            These aren&apos;t words on a sign. They&apos;re how the shop runs. We don&apos;t guess at diagnoses. We don&apos;t cut corners on rebuilds. And we never stop looking for a better way to do the work.
           </p>
           <p className="text-[#666] leading-relaxed mb-10">
-            That&apos;s why we build our own injectors. That&apos;s why we have a chassis dyno instead of just taking the customer&apos;s word. That&apos;s why people who could go to a shop down the street drive 800 miles to bring their truck to us.
+            That&apos;s why we build our own injectors. That&apos;s why we have a chassis/engine dyno instead of just taking the customer&apos;s word. That&apos;s why people who could go to a shop down the street drive 800 miles to bring their truck to us.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="tel:3074005090" className="btn-primary">☎ (307) 400-5090</a>

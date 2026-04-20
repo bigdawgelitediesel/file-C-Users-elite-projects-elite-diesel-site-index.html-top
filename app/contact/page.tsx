@@ -3,7 +3,7 @@ import { ContactForm } from "../_components/contact-form";
 
 export const metadata: Metadata = {
   title: "Contact | Elite Diesel Service · Cheyenne, WY",
-  description: "Elite Diesel Service. 104 Robert Ave, Cheyenne, WY 82007. Call (307) 400-5090. Mon–Fri 8am–5pm.",
+  description: "Elite Diesel Service. 104 Robert Ave, Cheyenne, WY 82007. Call (307) 400-5090. Open Monday to Friday, 8am to 5pm.",
 };
 
 export default function ContactPage() {
@@ -56,10 +56,10 @@ export default function ContactPage() {
                       label: "Hours",
                       content: (
                         <div>
-                          <div className="text-base font-semibold text-[#1a1a1a]">Monday – Friday</div>
-                          <div className="font-display text-[#c8102e] font-bold text-xl tracking-tight">8:00 AM – 5:00 PM</div>
-                          <div className="text-[#888] text-sm mt-1">Closed 12pm–1pm for lunch</div>
-                          <div className="text-[#888] text-sm">Saturday &amp; Sunday — Closed</div>
+                          <div className="text-base font-semibold text-[#1a1a1a]">Monday to Friday</div>
+                          <div className="font-display text-[#c8102e] font-bold text-xl tracking-tight">8:00 AM to 5:00 PM</div>
+                          <div className="text-[#888] text-sm mt-1">Closed daily 12pm to 1pm</div>
+                          <div className="text-[#888] text-sm">Saturday &amp; Sunday closed</div>
                         </div>
                       ),
                     },
@@ -67,8 +67,8 @@ export default function ContactPage() {
                       label: "Rates",
                       content: (
                         <div className="flex flex-col gap-1">
-                          <div><span className="font-display text-[#c8102e] font-bold text-lg">$175/hr</span> <span className="text-[#666] text-sm">— Trucks &amp; Equipment</span></div>
-                          <div><span className="font-display text-[#c8102e] font-bold text-lg">$250/hr</span> <span className="text-[#666] text-sm">— Motorhomes</span></div>
+                          <div><span className="font-display text-[#c8102e] font-bold text-lg">$175/hr</span> <span className="text-[#666] text-sm">Trucks &amp; Equipment</span></div>
+                          <div><span className="font-display text-[#c8102e] font-bold text-lg">$250/hr</span> <span className="text-[#666] text-sm">Motorhomes</span></div>
                         </div>
                       ),
                     },
@@ -167,7 +167,7 @@ export default function ContactPage() {
             <div className="badge mb-3">Send a Message</div>
             <h2 className="font-display uppercase text-3xl md:text-4xl font-bold text-[#1a1a1a] mt-3 mb-3 tracking-tight">Rather Write Than Call?</h2>
             <p className="text-[#666] leading-relaxed max-w-xl mx-auto">
-              Drop the details of what your truck is doing (or not doing) and a tech will get back to you. For emergencies, always call — phone&apos;s faster.
+              Drop the details of what your truck is doing (or not doing) and a tech will get back to you. For emergencies, always call. The phone is faster.
             </p>
           </div>
 

@@ -33,9 +33,9 @@ export function Footer() {
             </div>
             <div className="mt-5">
               <div className="font-display text-xs font-semibold uppercase tracking-widest text-[#c8102e] mb-2">Hours</div>
-              <div className="text-sm text-[#cbd5e1]">Mon–Fri · 8am to 5pm</div>
-              <div className="text-xs text-[#64748b]">Closed 12pm–1pm for lunch</div>
-              <div className="text-xs text-[#64748b]">Sat &amp; Sun — Closed</div>
+              <div className="text-sm text-[#cbd5e1]">Mon to Fri · 8am to 5pm</div>
+              <div className="text-xs text-[#64748b]">Closed daily 12pm to 1pm</div>
+              <div className="text-xs text-[#64748b]">Sat &amp; Sun closed</div>
             </div>
           </div>
 
@@ -45,7 +45,7 @@ export function Footer() {
             <div className="flex flex-col gap-2.5">
               {[
                 { href: "/services#engine", label: "Engine Rebuilds" },
-                { href: "/services#dyno", label: "Chassis Dynamometer" },
+                { href: "/services#dyno", label: "Chassis/Engine Dynamometer" },
                 { href: "/services#ecm", label: "ECM Diagnostics" },
                 { href: "/services#injectors", label: "Proprietary Injectors" },
                 { href: "/services#turbo", label: "Turbo Service" },
@@ -66,7 +66,7 @@ export function Footer() {
             <div className="flex flex-col gap-2.5 mb-6">
               <Link href="/about" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">About Troy</Link>
               <Link href="/reform" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">The Pardon Arc</Link>
-              <Link href="/reform#bill" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">H.R. 8079 — Diesel Truck Liberation Act</Link>
+              <Link href="/reform#bill" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">H.R. 8079: Diesel Truck Liberation Act</Link>
               <Link href="/press" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">Press &amp; Media</Link>
               <Link href="/contact" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">Contact &amp; Directions</Link>
               <a href="https://www.facebook.com/elitediesel307/" target="_blank" rel="noopener noreferrer" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">Facebook @elitediesel307</a>
