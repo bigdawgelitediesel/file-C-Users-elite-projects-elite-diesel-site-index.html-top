@@ -222,29 +222,24 @@ body {
 /* Heat shimmer: subtle hue warp on the backdrop layer */
 .hero-logo-backdrop {
   position: absolute;
-  top: 50%;
-  right: -8%;
-  transform: translateY(-50%);
-  width: 900px;
-  height: 900px;
-  max-width: 95vw;
-  max-height: 95vw;
-  opacity: 0.09;
-  filter: blur(3px) grayscale(100%) contrast(1.3) brightness(1.1);
+  bottom: 0;
+  right: 8%;
+  width: auto;
+  height: 95vh;
+  max-width: 60vw;
+  object-fit: contain;
+  object-position: bottom;
+  opacity: 1;
+  filter: none;
   pointer-events: none;
-  animation: slowZoom 22s ease-in-out infinite alternate, heatShimmer 6s ease-in-out infinite alternate;
-  will-change: transform, filter;
+  z-index: 1;
+  animation: emberPulse 4.5s ease-in-out infinite alternate;
+  will-change: filter;
 }
 
 @keyframes slowZoom {
-  0% { transform: translateY(-50%) scale(1); }
-  100% { transform: translateY(-50%) scale(1.1); }
-}
-
-@keyframes heatShimmer {
-  0%   { filter: blur(3px) grayscale(100%) contrast(1.3) brightness(1.08) hue-rotate(-2deg); }
-  50%  { filter: blur(3.5px) grayscale(100%) contrast(1.35) brightness(1.12) hue-rotate(4deg); }
-  100% { filter: blur(3px) grayscale(100%) contrast(1.3) brightness(1.08) hue-rotate(-1deg); }
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
 }
 
 .hero-logo-main {
@@ -293,6 +288,7 @@ body {
   width: 100%;
   pointer-events: none;
   opacity: 0.55;
+  z-index: 4;
   mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent);
 }

@@ -60,24 +60,24 @@ export default function HomePage() {
         {/* Blurred logo as shop motif backdrop */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/logo.jpg"
+          src="/logo.png"
           alt=""
           aria-hidden="true"
           className="hero-logo-backdrop"
-          data-parallax="0.15"
         />
-        <div className="hero-noise" />
+        <div className="hero-noise" style={{ zIndex: 2 }} />
         {/* Vignette */}
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
               "radial-gradient(ellipse 100% 70% at 50% 50%, transparent 40%, rgba(0,0,0,0.6) 100%)",
+            zIndex: 3,
           }}
         />
 
         <div className="container relative min-h-screen flex items-center">
-          <div className="grid lg:grid-cols-[1.3fr_1fr] items-center gap-12 w-full py-24">
+          <div className="grid lg:grid-cols-[1.3fr_1fr] items-center gap-12 w-full pt-6 pb-24">
             <div className="fade-up max-w-2xl">
               <div className="badge mb-7" style={{ background: "rgba(200,16,46,0.15)", color: "#ff9fac", borderColor: "rgba(200,16,46,0.4)" }}>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#c8102e] animate-pulse" />
@@ -116,16 +116,8 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Logo panel */}
-            <div className="hidden lg:flex justify-end">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/logo.jpg"
-                alt="Elite Diesel Service"
-                className="hero-logo-main rounded-2xl"
-                style={{ width: "380px", height: "380px", objectFit: "contain" }}
-              />
-            </div>
+            {/* Logo panel — absolutely positioned so it's not capped by the grid column */}
+            <div className="hidden lg:block" />
           </div>
         </div>
 

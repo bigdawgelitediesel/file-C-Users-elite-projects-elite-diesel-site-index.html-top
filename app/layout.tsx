@@ -48,8 +48,8 @@ export const metadata: Metadata = {
   creator: "Elite Diesel Service",
   publisher: "Elite Diesel Service",
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
     type: "website",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     description: DESCRIPTION,
     images: [
       {
-        url: "/logo.jpg",
+        url: "/logo.png",
         width: 1200,
         height: 630,
         alt: "Elite Diesel Service, Cheyenne, Wyoming",
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Elite Diesel Service | Cheyenne, WY",
     description: DESCRIPTION,
-    images: ["/logo.jpg"],
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
