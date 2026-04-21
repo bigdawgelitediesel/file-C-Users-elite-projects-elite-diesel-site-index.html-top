@@ -20,7 +20,7 @@
 html { scroll-behavior: smooth; }
 
 *, *::before, *::after {
-  cursor: url('/mechanic-mouse.png') 24 0, auto !important;
+  cursor: url('/mechanic-mouse.png') 4 4, auto !important;
 }
 
 body {

@@ -178,7 +178,7 @@ export default function ContactPage() {
       <section className="section-sm bg-[#0a0a0a] text-white border-t border-[#1f2937]">
         <div className="container flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
-            <div className="font-display uppercase font-bold text-2xl text-white mb-1 tracking-tight">Ready to book your truck in?</div>
+            <div className="font-display uppercase font-bold text-2xl text-white mb-1 tracking-tight">Ready to bring your truck in?</div>
             <div className="text-[#94a3b8] text-sm">Give us a call. We&apos;ll get you squared away.</div>
           </div>
           <a href="tel:3074005090" className="btn-primary text-base py-3.5 px-8 shrink-0">
