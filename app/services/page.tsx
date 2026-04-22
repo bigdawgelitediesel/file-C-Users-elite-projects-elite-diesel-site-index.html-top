@@ -111,9 +111,9 @@ const CATEGORIES = [
       },
       {
         icon: "Factory",
-        title: "Construction Equipment, Generators & Off-Highway",
-        desc: "If it runs on diesel, we work on it. No license plate required. Excavators, dozers, loaders, gensets, ag equipment, industrial diesel.",
-        detail: "We're not just a truck shop. If it runs on diesel, we work on it. That includes construction equipment (excavators, dozers, loaders, skid steers), standby and prime-power generators, agricultural equipment, and industrial diesel of every kind. Same techs, same tooling, same standards we hold to road trucks. Tier 4 aftertreatment, ECM diagnostics, in-frame and out-of-frame rebuilds, fuel system work, the whole book. Call the shop to talk through your equipment.",
+        title: "Off-Road & Industrial Diesel",
+        desc: "If it runs on diesel, we work on it. No license plate required. Frac pumps, excavators, loaders, skid steers, generators, ag equipment, industrial diesel.",
+        detail: "We're not just a truck shop. If it runs on diesel, we work on it. That includes frac pumps and oilfield equipment, construction gear (excavators, dozers, loaders, skid steers), standby and prime-power generators, agricultural equipment, and industrial diesel of every kind. Same techs, same tooling, same standards we hold to road trucks. Tier 4 aftertreatment, ECM diagnostics, in-frame and out-of-frame rebuilds, fuel system work, the whole book. Call the shop to talk through your equipment.",
       },
       {
         icon: "Package",
@@ -144,7 +144,7 @@ export default function ServicesPage() {
             Our <span className="text-ember">Services</span>
           </h1>
           <p className="text-[#cbd5e1] max-w-2xl leading-relaxed text-lg">
-            From a quick diagnostic to a ground-up race engine build, Elite Diesel handles the full spectrum of heavy diesel service. Trucks, construction equipment, generators, ag, industrial. If it runs on diesel, we work on it. Click any service to learn more.
+            From a quick diagnostic to a ground-up race engine build, Elite Diesel handles the full spectrum of heavy diesel service. Trucks, frac pumps, construction equipment, generators, ag, industrial. If it runs on diesel, we work on it. Click any service to learn more.
           </p>
         </div>
       </section>

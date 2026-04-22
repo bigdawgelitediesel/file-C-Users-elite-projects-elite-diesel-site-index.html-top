@@ -349,7 +349,7 @@ export default function HomePage() {
                 Ready to Bring Your Truck In?
               </h2>
               <p className="text-[#555] mb-8 leading-relaxed">
-                Give us a call or stop by. We serve owner-operators, fleets, construction crews, and everyone in between. If it runs on diesel, we work on it. No license plate required. Honest estimates, real expertise, fast turnaround.
+                Give us a call or stop by. We serve owner-operators, fleets, construction crews, oilfield, and everyone in between. If it runs on diesel, we work on it. No license plate required. Honest estimates, real expertise, fast turnaround.
               </p>
               <a href="tel:3074005090" className="btn-primary text-base py-3.5 px-8">
                 ☎ (307) 400-5090
