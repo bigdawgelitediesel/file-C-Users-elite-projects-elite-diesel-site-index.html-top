@@ -261,6 +261,7 @@ body {
   letter-spacing: -0.02em;
   line-height: 0.88;
   text-transform: uppercase;
+  font-size: clamp(3rem, 8vw, 6.5rem);
 }
 
 /* Pulsing phone button in hero */
@@ -650,4 +651,78 @@ body {
 }
 .service-expand > div {
   overflow: hidden;
+}
+
+/* ===================================================
+   MOBILE POLISH — ≤767px only (desktop untouched)
+   Rules here must never fire above 768px.
+   =================================================== */
+
+@media (max-width: 767px) {
+  /* Tighten section padding — 9rem is crushing on phones */
+  .section { padding: 4.5rem 0; }
+  .section-sm { padding: 3rem 0; }
+  .pardon-section { padding: 4.5rem 0; }
+
+  /* Container edges — hair less so cards get more width */
+  .container { padding: 0 1.25rem; }
+
+  /* Body bottom pad so sticky mobile CTA doesn't cover footer content */
+  body { padding-bottom: 4.5rem; }
+
+  /* Hero backdrop logo — dim & reposition so it doesn't fight the headline or CTAs */
+  .hero-logo-backdrop {
+    right: -30%;
+    height: 38vh;
+    max-width: 80vw;
+    opacity: 0.22;
+  }
+
+  /* Hero inner container — sensible breathing room top & bottom */
+  .hero-cinematic .container { padding-top: 2rem; padding-bottom: 7rem; }
+
+  /* Hero headline & paragraph — slightly tighter top margin so pill + copy sit comfortably */
+  .hero-cinematic .hero-headline { margin-top: 0.5rem; }
+
+  /* Scroll cue — smaller & closer on short viewports */
+  .hero-cinematic .absolute.bottom-16 { bottom: 2.5rem; }
+
+  /* Pull quotes — tighter padding so they don't eat phone width */
+  .pull-quote {
+    font-size: 1.15rem;
+    padding-left: 1rem;
+    border-left-width: 2px;
+  }
+  .pardon-pullquote {
+    padding-left: 1rem;
+    border-left-width: 3px;
+  }
+
+  /* Chrome band stats — trim one notch so two-column layout breathes */
+  .stat-chrome { font-size: 3rem; }
+
+  /* Pardon date monuments — allow smaller minimum on phone */
+  .pardon-date { font-size: clamp(3rem, 16vw, 5rem); }
+
+  /* Ensure tap targets on nav/buttons stay ≥44px tall (iOS guideline) */
+  .btn-primary,
+  .btn-outline,
+  .btn-outline-white {
+    min-height: 44px;
+    padding: 0.85rem 1.25rem;
+  }
+
+  /* Hero headline — shrink min clamp so "REAL MECHANICS." wraps cleanly on phones.
+     The JSX uses text-[clamp(3rem,8vw,6.5rem)], which locks to 48px min.
+     Override on mobile to let the type breathe. */
+  .hero-headline {
+    font-size: clamp(2rem, 10vw, 3.25rem) !important;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  /* Belt-and-suspenders: prevent any stray horizontal scroll on phones */
+  html, body {
+    overflow-x: hidden;
+  }
 }

@@ -64,8 +64,8 @@ const CATEGORIES = [
       {
         icon: "Trophy",
         title: "Custom Diesel Race Engines",
-        desc: "High-output builds for competitive diesel motorsport. Troy has been building race engines for decades.",
-        detail: "Troy has been building competition diesel engines for serious competitors for decades: sled pulls, truck pulls, circuit events. These aren't modified stock engines. They're ground-up builds spec'd to your class rules, your power goals, and your budget. We've built winners at regional and national levels. If you're serious about competition, call the shop and talk to Troy directly. He'll tell you straight what's possible.",
+        desc: "High-output builds for competitive diesel motorsport. We've been building race engines for decades.",
+        detail: "We've been building competition diesel engines for serious competitors for decades: sled pulls, truck pulls, circuit events. These aren't modified stock engines. They're ground-up builds spec'd to your class rules, your power goals, and your budget. We've built winners at regional and national levels. If you're serious about competition, call the shop and we'll tell you straight what's possible.",
       },
     ],
   },
@@ -151,7 +151,7 @@ export default function ServicesPage() {
 
       {/* Rates */}
       <section className="bg-white border-b border-[#e8e2da]">
-        <div className="container py-6">
+        <div className="container pt-10 pb-6 md:py-6">
           <div className="flex flex-wrap gap-6 items-center">
             <div className="font-display text-xs font-bold uppercase tracking-[0.2em] text-[#888]">Shop Rates</div>
             <div className="flex gap-6 flex-wrap">

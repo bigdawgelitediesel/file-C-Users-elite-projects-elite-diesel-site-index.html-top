@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Troy Lake & Elite Diesel Service",
   description:
-    "Troy Lake founded Elite Diesel Service in 1995 with a deep Caterpillar background: time inside the company and years alongside their engineering teams. Women-owned. Veteran-owned. Twice pardoned by President Trump.",
+    "Troy Lake founded Elite Diesel Service in 1995 with a deep Caterpillar background: time inside the company and years alongside their engineering teams. Family-owned. Veteran-owned. Twice pardoned by President Trump.",
 };
 
 const TIMELINE = [
@@ -59,7 +59,7 @@ const CREDS = [
   "ASE-Certified Shop",
   "Proprietary injector and turbo development",
   "Chassis dynamometer on-site",
-  "Women-owned · Veteran-owned · Family-run",
+  "Family-owned · Veteran-owned",
 ];
 
 export default function AboutPage() {
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <span className="text-ember">Experience.</span>
           </h1>
           <p className="text-[#cbd5e1] text-lg max-w-2xl leading-relaxed">
-            Elite Diesel wasn&apos;t built on a business plan. It was built on a deep history with Caterpillar, a pickup truck in Wyoming, and a refusal to do anything halfway. Women-owned. Veteran-owned. Family-run since 1995.
+            Elite Diesel wasn&apos;t built on a business plan. It was built on a deep history with Caterpillar, a pickup truck in Wyoming, and a refusal to do anything halfway. Family-owned. Veteran-owned. Running since 1995.
           </p>
         </div>
       </section>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                     { dt: "Owner", dd: "Troy Lake" },
                     { dt: "Certification", dd: "Master Mechanic" },
                     { dt: "Prior Experience", dd: "Deep CAT background: factory & engineering teams" },
-                    { dt: "Ownership", dd: "Women-Owned · Veteran-Owned" },
+                    { dt: "Ownership", dd: "Family-Owned · Veteran-Owned" },
                     { dt: "Platforms Serviced", dd: "CAT · Cummins · Detroit · PACCAR · Volvo" },
                   ].map((f) => (
                     <div key={f.dt} className="flex justify-between gap-4 py-2.5 first:pt-0 last:pb-0">
@@ -183,11 +183,6 @@ export default function AboutPage() {
             Troy Lake, Owner
           </div>
 
-          <div className="mt-12">
-            <Link href="/reform" className="btn-primary">
-              The full story on reform →
-            </Link>
-          </div>
         </div>
       </section>
 

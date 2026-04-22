@@ -9,16 +9,19 @@ export function Footer() {
           {/* Column 1: identity + hours */}
           <div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-10 h-10 bg-[#c8102e] rounded-lg flex items-center justify-center shadow-md">
-                <span className="font-display font-bold text-white text-sm tracking-tight">ED</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/brand-logo.jpg"
+                alt="Elite Diesel Service logo"
+                className="w-12 h-12 object-contain shrink-0 rounded-md bg-white"
+              />
               <div>
                 <div className="font-display font-bold text-white text-sm tracking-tight uppercase">Elite Diesel Service</div>
                 <div className="text-[10px] text-[#94a3b8] uppercase tracking-widest">Cheyenne, WY</div>
               </div>
             </div>
             <p className="text-sm text-[#94a3b8] leading-relaxed max-w-xs mb-5 italic">
-              &ldquo;We keep the rigs that keep America moving.&rdquo;
+              &ldquo;We keep America&apos;s rigs on the road.&rdquo;
             </p>
             <div className="mt-4">
               <div className="font-display text-xs font-semibold uppercase tracking-widest text-[#c8102e] mb-2">Address</div>
@@ -65,8 +68,6 @@ export function Footer() {
             <div className="font-display text-xs font-semibold uppercase tracking-widest text-[#c8102e] mb-5">Mission</div>
             <div className="flex flex-col gap-2.5 mb-6">
               <Link href="/about" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">About Troy</Link>
-              <Link href="/reform" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">The Pardon Arc</Link>
-              <Link href="/reform#bill" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">H.R. 8079: Diesel Truck Liberation Act</Link>
               <Link href="/press" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">Press &amp; Media</Link>
               <Link href="/contact" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">Contact &amp; Directions</Link>
               <a href="https://www.facebook.com/elitediesel307/" target="_blank" rel="noopener noreferrer" className="text-sm text-[#cbd5e1] hover:text-white transition-colors">Facebook @elitediesel307</a>
@@ -86,7 +87,7 @@ export function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 mb-5 font-display uppercase tracking-[0.15em] text-[11px]">
             <span className="text-[#ff6b7e] font-bold">Since 1995</span>
             <span className="text-[#64748b]">·</span>
-            <span className="text-[#cbd5e1]">Women-Owned</span>
+            <span className="text-[#cbd5e1]">Family-Owned</span>
             <span className="text-[#64748b]">·</span>
             <span className="text-[#cbd5e1]">Veteran-Owned</span>
             <span className="text-[#64748b]">·</span>

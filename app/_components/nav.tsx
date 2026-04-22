@@ -8,7 +8,6 @@ const LINKS = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
-  { href: "/reform", label: "Reform" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -38,12 +37,15 @@ export function Nav() {
       <div className="container">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-[#c8102e] rounded-lg flex items-center justify-center shadow-sm">
-              <span className="font-black text-white text-sm leading-none tracking-tight">ED</span>
-            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/brand-logo.jpg"
+              alt="Elite Diesel Service logo"
+              className="w-11 h-11 object-contain shrink-0"
+            />
             <div>
-              <div className="font-display font-bold text-[#1a1a1a] text-sm leading-tight tracking-tight uppercase">Elite Diesel</div>
-              <div className="text-[10px] text-[#888] uppercase tracking-widest leading-tight">Service · Cheyenne, WY</div>
+              <div className="font-display font-bold text-[#1a1a1a] text-sm leading-tight tracking-tight uppercase">Elite Diesel Service</div>
+              <div className="text-[10px] text-[#888] uppercase tracking-widest leading-tight">Cheyenne, WY</div>
             </div>
           </Link>
 

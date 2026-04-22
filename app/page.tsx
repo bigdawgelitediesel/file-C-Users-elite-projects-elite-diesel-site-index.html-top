@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { ReviewsCarousel } from "./_components/reviews-carousel";
-import { PardonSection } from "./_components/pardon-section";
 import { RpmWave } from "./_components/rpm-wave";
 
 const SERVICES = [
@@ -47,7 +46,7 @@ const MILESTONES = [
 const STATS = [
   { value: "CAT", unit: "HISTORY", label: "Factory & engineering-team background" },
   { value: "40+", unit: "YRS", label: "In the heavy diesel trade since 1983" },
-  { value: "W&V", unit: "OWNED", label: "Women & veteran owned" },
+  { value: "FAMILY", unit: "OWNED", label: "Family-owned, veteran-owned" },
   { value: "2×", unit: "PARDONED", label: "Full presidential pardons", accent: true },
 ];
 
@@ -84,14 +83,14 @@ export default function HomePage() {
                 Cheyenne, Wyoming · Est. 1995
               </div>
 
-              <h1 className="hero-headline text-white text-[clamp(3rem,8vw,6.5rem)] mb-6">
+              <h1 className="hero-headline text-white mb-6">
                 HEAVY IRON.<br />
                 <span className="text-ember">REAL MECHANICS.</span><br />
                 <span className="text-chrome">NO SHORTCUTS.</span>
               </h1>
 
               <p className="text-lg md:text-xl text-[#cbd5e1] leading-relaxed max-w-xl mb-4">
-                We keep the rigs that keep America moving. Master-certified heavy diesel repair for CAT, Cummins, Detroit, PACCAR, and Volvo. Women-owned. Veteran-owned.
+                We keep America&apos;s rigs on the road. Master-certified heavy diesel repair for CAT, Cummins, Detroit, PACCAR, and Volvo. Family-owned. Veteran-owned.
               </p>
 
               <p className="text-sm uppercase tracking-[0.18em] font-display text-[#ff6b7e] mb-10">
@@ -107,13 +106,6 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="mt-14 flex flex-wrap gap-x-10 gap-y-4 text-xs font-semibold uppercase tracking-[0.18em] text-[#94a3b8] fade-up fade-up-delay-2">
-                <span>CAT</span>
-                <span>Cummins</span>
-                <span>Detroit</span>
-                <span>PACCAR</span>
-                <span>Volvo</span>
-              </div>
             </div>
 
             {/* Logo panel — absolutely positioned so it's not capped by the grid column */}
@@ -228,9 +220,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-      {/* =========== PARDON — dramatic full bleed =========== */}
-      <PardonSection />
 
       {/* =========== SERVICES =========== */}
       <section className="section bg-[#f9f7f4]">
