@@ -48,7 +48,7 @@ export function Footer() {
             <div className="flex flex-col gap-2.5">
               {[
                 { href: "/services#engine", label: "Engine Rebuilds" },
-                { href: "/services#dyno", label: "Chassis/Engine Dynamometer" },
+                { href: "/services#dyno", label: "Chassis/Engine Dynamometer (Coming Soon)" },
                 { href: "/services#ecm", label: "ECM Diagnostics" },
                 { href: "/services#injectors", label: "Proprietary Injectors" },
                 { href: "/services#turbo", label: "Turbo Service" },
@@ -85,7 +85,7 @@ export function Footer() {
         {/* Pride lines + legal */}
         <div className="mt-14 pt-6 border-t border-[#1f2937]">
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2 mb-5 font-display uppercase tracking-[0.15em] text-[11px]">
-            <span className="text-[#ff6b7e] font-bold">Since 1995</span>
+            <span className="text-[#ff6b7e] font-bold">Since 1996</span>
             <span className="text-[#64748b]">·</span>
             <span className="text-[#cbd5e1]">Family-Owned</span>
             <span className="text-[#64748b]">·</span>

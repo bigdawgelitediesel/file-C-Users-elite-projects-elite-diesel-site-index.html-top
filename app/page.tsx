@@ -10,8 +10,8 @@ const SERVICES = [
   },
   {
     icon: "◆",
-    title: "Chassis/Engine Dynamometer",
-    desc: "On-site chassis and engine dyno for real-world power measurement, verified break-in, and tune validation at the wheels or at the flywheel.",
+    title: "Chassis/Engine Dynamometer (Coming Soon)",
+    desc: "Coming soon: on-site chassis and engine dyno for real-world power measurement, verified break-in, and tune validation at the wheels or at the flywheel.",
   },
   {
     icon: "▲",
@@ -21,7 +21,7 @@ const SERVICES = [
   {
     icon: "●",
     title: "Proprietary Injectors",
-    desc: "Fuel-economy tuned injectors built in-house and proven on the dyno. Performance you won't find off the shelf.",
+    desc: "Fuel-economy tuned injectors built in-house and proven before they ship. Performance you won't find off the shelf.",
   },
   {
     icon: "■",
@@ -37,7 +37,7 @@ const SERVICES = [
 
 const MILESTONES = [
   { year: "1983", label: "In the trade" },
-  { year: "1995", label: "Elite Diesel founded" },
+  { year: "1996", label: "Elite Diesel founded" },
   { year: "2022", label: "Cheyenne shop opens" },
   { year: "2025", label: "Troy pardoned", accent: true },
   { year: "2026", label: "Shop pardoned", accent: true },
@@ -80,7 +80,7 @@ export default function HomePage() {
             <div className="fade-up max-w-2xl">
               <div className="badge mb-7" style={{ background: "rgba(200,16,46,0.15)", color: "#ff9fac", borderColor: "rgba(200,16,46,0.4)" }}>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#c8102e] animate-pulse" />
-                Cheyenne, Wyoming · Est. 1995
+                Cheyenne, Wyoming · Est. 1996
               </div>
 
               <h1 className="hero-headline text-white mb-6">
@@ -175,7 +175,7 @@ export default function HomePage() {
                 Troy Lake started in the trade in <strong>1983</strong>. A long history with Caterpillar, time inside the company and years working alongside their engineering teams, taught him every heavy diesel platform from the ground up. The kind of expertise that can&apos;t be faked or fast-tracked.
               </p>
               <p>
-                In <strong>1995</strong> he opened Elite Diesel Service out of a pickup truck in Dubois, Wyoming, running mobile repair for ranchers, loggers, and owner-operators who needed the work done right. The shop grew through Elko, Nevada and Windsor, Colorado before planting its flag in Cheyenne in March <strong>2022</strong>.
+                In <strong>1996</strong> he opened Elite Diesel Service out of a pickup truck in Dubois, Wyoming, running mobile repair for ranchers, loggers, and owner-operators who needed the work done right. The shop grew through Elko, Nevada and Windsor, Colorado before planting its flag in Cheyenne in March <strong>2022</strong>.
               </p>
               <div className="pull-quote">
                 &ldquo;We have tools most shops don&apos;t carry, and standards most shops don&apos;t hold. That&apos;s why people drive three states to bring their trucks here.&rdquo;
@@ -307,11 +307,11 @@ export default function HomePage() {
                 Built Different
               </div>
               <h2 className="font-display uppercase text-3xl md:text-4xl font-bold mt-3 mb-5 tracking-tight leading-[1.05]">
-                Chassis &amp; Engine Dyno. Custom Injectors.<br />
+                Chassis &amp; Engine Dyno <span className="text-ember">(Coming Soon)</span>. Custom Injectors.<br />
                 <span className="text-ember">This Isn&apos;t a Quick-Lube Shop.</span>
               </h2>
               <p className="text-[#94a3b8] leading-relaxed mb-8">
-                We have tools most Wyoming diesel shops don&apos;t carry. Our on-site chassis dynamometer means we tune and verify, not guess. Proprietary fuel-economy injectors are built here, tested here, and proven before they ship. We also handle glider kit builds, diesel-to-natural gas conversions, and custom race engines.
+                We have tools most Wyoming diesel shops don&apos;t carry. An on-site chassis dynamometer is coming soon so we can tune and verify, not guess. Proprietary fuel-economy injectors are built here, tested here, and proven before they ship. We also handle diesel-to-natural gas conversions and custom race engines.
               </p>
               <a href="tel:3074005090" className="btn-primary">
                 Talk to a Tech: (307) 400-5090
@@ -349,7 +349,7 @@ export default function HomePage() {
                 Ready to Bring Your Truck In?
               </h2>
               <p className="text-[#555] mb-8 leading-relaxed">
-                Give us a call or stop by. We serve owner-operators, fleets, and everyone in between. Honest estimates, real expertise, fast turnaround.
+                Give us a call or stop by. We serve owner-operators, fleets, construction crews, and everyone in between. If it runs on diesel, we work on it. No license plate required. Honest estimates, real expertise, fast turnaround.
               </p>
               <a href="tel:3074005090" className="btn-primary text-base py-3.5 px-8">
                 ☎ (307) 400-5090

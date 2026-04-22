@@ -21,7 +21,7 @@ const inter = Inter({
 });
 
 const DESCRIPTION =
-  "Elite Diesel Service in Cheyenne, Wyoming. We keep America's rigs on the road. Master-certified heavy diesel repair for CAT, Cummins, Detroit, PACCAR, and Volvo. Family-owned. Veteran-owned. Est. 1995. Call (307) 400-5090.";
+  "Elite Diesel Service in Cheyenne, Wyoming. We keep America's rigs on the road. Master-certified heavy diesel repair for CAT, Cummins, Detroit, PACCAR, and Volvo. Family-owned. Veteran-owned. Est. 1996. Call (307) 400-5090.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://elitediesel.com"),

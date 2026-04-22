@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Troy Lake & Elite Diesel Service",
   description:
-    "Troy Lake founded Elite Diesel Service in 1995 with a deep Caterpillar background: time inside the company and years alongside their engineering teams. Family-owned. Veteran-owned. Twice pardoned by President Trump.",
+    "Troy Lake founded Elite Diesel Service in 1996 with a deep Caterpillar background: time inside the company and years alongside their engineering teams. Family-owned. Veteran-owned. Twice pardoned by President Trump.",
 };
 
 const TIMELINE = [
@@ -19,14 +19,14 @@ const TIMELINE = [
     detail: "Years inside Caterpillar and alongside their engineering teams. A long CAT history that shaped Troy's approach to every major diesel platform. The kind of expertise earned from time on the tools and time in the room with the people designing the equipment.",
   },
   {
-    year: "1995",
+    year: "1996",
     event: "Elite Diesel founded · Dubois, WY",
     detail: "Troy opens Elite Diesel Service out of a pickup truck in Dubois, Wyoming, running mobile repair for ranchers, loggers, and owner-operators across the Wind River range.",
   },
   {
     year: "2022",
     event: "Cheyenne shop opens",
-    detail: "After stops in Elko, Nevada and Windsor, Colorado, Elite Diesel plants its flag in Cheyenne: bigger shop, chassis/engine dyno, full parts inventory, more trucks to serve.",
+    detail: "After stops in Elko, Nevada and Windsor, Colorado, Elite Diesel plants its flag in Cheyenne: chassis/engine dyno (coming soon), full parts inventory, more trucks to serve.",
   },
   {
     year: "2024",
@@ -58,7 +58,7 @@ const CREDS = [
   "Certified Master Mechanic",
   "ASE-Certified Shop",
   "Proprietary injector and turbo development",
-  "Chassis dynamometer on-site",
+  "Chassis dynamometer (coming soon)",
   "Family-owned · Veteran-owned",
 ];
 
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <span className="text-ember">Experience.</span>
           </h1>
           <p className="text-[#cbd5e1] text-lg max-w-2xl leading-relaxed">
-            Elite Diesel wasn&apos;t built on a business plan. It was built on a deep history with Caterpillar, a pickup truck in Wyoming, and a refusal to do anything halfway. Family-owned. Veteran-owned. Running since 1995.
+            Elite Diesel wasn&apos;t built on a business plan. It was built on a deep history with Caterpillar, a pickup truck in Wyoming, and a refusal to do anything halfway. Family-owned. Veteran-owned. Running since 1996.
           </p>
         </div>
       </section>
@@ -116,7 +116,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 {[
                   { value: "1983", label: "On Diesel Since" },
-                  { value: "1995", label: "Founded" },
+                  { value: "1996", label: "Founded" },
                   { value: "5", label: "Major Platforms" },
                   { value: "2×", label: "Pardoned", accent: true },
                 ].map((s) => (
@@ -132,7 +132,7 @@ export default function AboutPage() {
                 <div className="font-display uppercase text-xs font-bold tracking-[0.2em] text-[#ff9fac] mb-5">The Essentials</div>
                 <dl className="flex flex-col divide-y divide-[#1f2937]">
                   {[
-                    { dt: "Founded", dd: "1995" },
+                    { dt: "Founded", dd: "1996" },
                     { dt: "Headquarters", dd: "Cheyenne, Wyoming" },
                     { dt: "Owner", dd: "Troy Lake" },
                     { dt: "Certification", dd: "Master Mechanic" },
@@ -225,7 +225,7 @@ export default function AboutPage() {
             These aren&apos;t words on a sign. They&apos;re how the shop runs. We don&apos;t guess at diagnoses. We don&apos;t cut corners on rebuilds. And we never stop looking for a better way to do the work.
           </p>
           <p className="text-[#666] leading-relaxed mb-10">
-            That&apos;s why we build our own injectors. That&apos;s why we have a chassis/engine dyno instead of just taking the customer&apos;s word. That&apos;s why people who could go to a shop down the street drive 800 miles to bring their truck to us.
+            That&apos;s why we build our own injectors. That&apos;s why a chassis/engine dyno is coming soon — so we verify instead of just taking the customer&apos;s word. That&apos;s why people who could go to a shop down the street drive 800 miles to bring their truck to us.
           </p>
           <div className="flex justify-center gap-4 flex-wrap">
             <a href="tel:3074005090" className="btn-primary">☎ (307) 400-5090</a>

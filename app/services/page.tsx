@@ -5,7 +5,7 @@ import { ServiceGrid } from "../_components/service-modal";
 export const metadata: Metadata = {
   title: "Services | Elite Diesel Service · Cheyenne, WY",
   description:
-    "Full-service diesel repair: engine rebuilds, chassis/engine dyno, ECM diagnostics, proprietary injectors, turbo repair, custom race builds. CAT, Cummins, Detroit, PACCAR, Volvo.",
+    "Full-service diesel repair: engine rebuilds, chassis/engine dyno (coming soon), ECM diagnostics, proprietary injectors, turbo repair, custom race builds. CAT, Cummins, Detroit, PACCAR, Volvo.",
 };
 
 const CATEGORIES = [
@@ -35,7 +35,7 @@ const CATEGORIES = [
         icon: "Hammer",
         title: "New Engine Builds",
         desc: "Custom builds optimized for fuel economy or performance. We build to your application.",
-        detail: "We build from scratch, whether that's a fuel-economy focused long-haul setup, a high-torque heavy-haul spec, or a full competition build. Every component is selected for the application. Every build is verified on our on-site chassis dynamometer before it goes in the truck. You'll know exactly what you're getting before you drive away.",
+        detail: "We build from scratch, whether that's a fuel-economy focused long-haul setup, a high-torque heavy-haul spec, or a full competition build. Every component is selected for the application. Once our chassis dynamometer is online (coming soon), every build will be verified on the dyno before it goes in the truck. Either way, you'll know exactly what you're getting before you drive away.",
       },
     ],
   },
@@ -45,9 +45,9 @@ const CATEGORIES = [
     services: [
       {
         icon: "Gauge",
-        title: "Chassis/Engine Dynamometer",
-        desc: "On-site chassis and engine dyno for real-world power measurement, verified break-in, and tune validation at the wheels or at the flywheel.",
-        detail: "We run both a chassis dyno and an engine dyno in-house, which is rare for a shop our size anywhere in the region. The chassis dyno measures real-world horsepower and torque at the wheels with the drivetrain loaded, which is how we verify tune results, diagnose driveability issues that only show up under load, and baseline a truck before and after work. The engine dyno takes the long block out of the equation and measures exactly what the engine itself produces, from idle to redline, which is how we handle verified break-in on fresh rebuilds, tune development on race builds, and final QA before the engine ever drops back into a frame. Having both means we can answer two different questions on the same build: what the engine makes, and what the truck delivers. If you want real numbers instead of estimated ones, this is how you get them.",
+        title: "Chassis/Engine Dynamometer (Coming Soon)",
+        desc: "Coming soon: on-site chassis and engine dyno for real-world power measurement, verified break-in, and tune validation at the wheels or at the flywheel.",
+        detail: "Coming soon to Elite Diesel Service: both a chassis dyno and an engine dyno in-house, which is rare for a shop our size anywhere in the region. The chassis dyno will measure real-world horsepower and torque at the wheels with the drivetrain loaded, which is how we'll verify tune results, diagnose driveability issues that only show up under load, and baseline a truck before and after work. The engine dyno will take the long block out of the equation and measure exactly what the engine itself produces, from idle to redline, which is how we'll handle verified break-in on fresh rebuilds, tune development on race builds, and final QA before the engine ever drops back into a frame. Having both will let us answer two different questions on the same build: what the engine makes, and what the truck delivers. Call the shop for a timeline on when the dyno comes online.",
       },
       {
         icon: "Cpu",
@@ -58,8 +58,8 @@ const CATEGORIES = [
       {
         icon: "Fuel",
         title: "Proprietary Injectors",
-        desc: "Fuel-economy tuned injectors built in-house and proven on the dyno. Performance you won't find off the shelf.",
-        detail: "We design and build our own fuel injectors in-house. These aren't remanufactured stockers, they're purpose-engineered for improved fuel atomization and combustion efficiency. The result is measurably better fuel economy and, in most cases, better power. Every set is proven on our dyno before it leaves the shop. We sell to owner-operators, fleets, and shops across the country. If you're tired of mediocre injectors, this is the upgrade.",
+        desc: "Fuel-economy tuned injectors built in-house and proven before they ship. Performance you won't find off the shelf.",
+        detail: "We design and build our own fuel injectors in-house. These aren't remanufactured stockers, they're purpose-engineered for improved fuel atomization and combustion efficiency. The result is measurably better fuel economy and, in most cases, better power. Every set is proven in-house before it leaves the shop, and once our dyno is online (coming soon), every set will get dyno verification too. We sell to owner-operators, fleets, and shops across the country. If you're tired of mediocre injectors, this is the upgrade.",
       },
       {
         icon: "Trophy",
@@ -98,12 +98,6 @@ const CATEGORIES = [
     color: "#0a0a0a",
     services: [
       {
-        icon: "Truck",
-        title: "Glider Kit Builds",
-        desc: "Complete glider kit builds: new cab and chassis with rebuilt or new powertrain.",
-        detail: "We complete full glider kit assemblies, pairing a new cab-and-chassis with a rebuilt or new powertrain. It's a cost-effective way to get a like-new truck without the price tag of a new one or the complexity of modern emissions systems. We handle powertrain selection, installation, wiring, final calibration, and road testing. If you're considering a glider, talk to us before you buy the kit. We can help you spec it right.",
-      },
-      {
         icon: "Settings",
         title: "Natural Gas Engine Service",
         desc: "Service and maintenance for natural gas engines. We stay current on alternative fuel platforms.",
@@ -114,6 +108,12 @@ const CATEGORIES = [
         title: "Diesel-to-Natural Gas Conversions",
         desc: "Full diesel-to-CNG/LNG conversion service for fleets looking to reduce fuel costs.",
         detail: "We handle complete diesel-to-natural gas conversions for fleet operators looking to reduce fuel costs over high mileage. This includes fuel system replacement, ECM recalibration, and all documentation. It's a significant upfront investment that pays back at scale. We'll be straight with you about whether the math makes sense for your operation before you commit. Call the shop to discuss your fleet size and mileage profile.",
+      },
+      {
+        icon: "Factory",
+        title: "Construction Equipment, Generators & Off-Highway",
+        desc: "If it runs on diesel, we work on it. No license plate required. Excavators, dozers, loaders, gensets, ag equipment, industrial diesel.",
+        detail: "We're not just a truck shop. If it runs on diesel, we work on it. That includes construction equipment (excavators, dozers, loaders, skid steers), standby and prime-power generators, agricultural equipment, and industrial diesel of every kind. Same techs, same tooling, same standards we hold to road trucks. Tier 4 aftertreatment, ECM diagnostics, in-frame and out-of-frame rebuilds, fuel system work, the whole book. Call the shop to talk through your equipment.",
       },
       {
         icon: "Package",
@@ -144,7 +144,7 @@ export default function ServicesPage() {
             Our <span className="text-ember">Services</span>
           </h1>
           <p className="text-[#cbd5e1] max-w-2xl leading-relaxed text-lg">
-            From a quick diagnostic to a ground-up race engine build, Elite Diesel handles the full spectrum of heavy diesel service. Click any service to learn more.
+            From a quick diagnostic to a ground-up race engine build, Elite Diesel handles the full spectrum of heavy diesel service. Trucks, construction equipment, generators, ag, industrial. If it runs on diesel, we work on it. Click any service to learn more.
           </p>
         </div>
       </section>
