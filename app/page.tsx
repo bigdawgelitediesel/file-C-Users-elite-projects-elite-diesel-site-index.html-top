@@ -221,6 +221,43 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* =========== ENGINE REBUILD SPOTLIGHT =========== */}
+      <section className="section bg-white border-t border-[#e8e2da]">
+        <div className="container">
+          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-14 items-center reveal">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#e8e2da]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/photos/cat-gearcase.jpg"
+                alt="Freshly rebuilt CAT engine gear case and bell housing, painted Caterpillar yellow, installed in a heavy-duty chassis"
+                className="w-full h-auto block"
+              />
+            </div>
+            <div>
+              <div className="badge mb-4">The Work</div>
+              <h2 className="font-display uppercase text-4xl md:text-5xl font-bold text-[#1a1a1a] mt-2 tracking-tight leading-[1.02]">
+                Engine Rebuilds.<br />
+                <span className="text-[#8b0f1c]">Done Right.</span>
+              </h2>
+              <p className="text-[#555] mt-5 leading-relaxed">
+                CAT, Cummins, Detroit, PACCAR, Volvo. Fresh paint, every seal replaced, every torque spec documented. Troy has been inside these platforms for over forty years. What leaves our shop is what you would build for your own truck.
+              </p>
+              <p className="text-[#555] mt-4 leading-relaxed">
+                If it lives under a hood, we have seen it, measured it, and put it back together. No shortcuts. No guessing. No warranty fights later.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-4">
+                <a href="tel:3074005090" className="btn-primary">
+                  ☎ Talk to Troy: (307) 400-5090
+                </a>
+                <Link href="/services" className="btn-outline">
+                  See All Services →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* =========== SERVICES =========== */}
       <section className="section bg-[#f9f7f4]">
         <div className="container">
